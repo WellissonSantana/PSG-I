@@ -5,7 +5,7 @@ import rk4
 l = 0.2     # taxa de infecção
 k = 20      # número médio de contatos
 i0 = 0.05   # fração inicial de infectados (todos começam em I1)
-n_estados = 4  # número de estados de infecção (I1, ..., In)
+n_estados = 20  # número de estados de infecção (I1, ..., In)
 u = 1     # taxa de progressão entre estados de infecção e recuperação
 t = np.linspace(0, 5, 500)
 h = t[1] - t[0] # intervalo de tempo
@@ -32,6 +32,6 @@ def n_compartimentos():
   plot.n_compartimentos(t, i_total, n_estados, resultados)
 
 
-sis()
-sins()
+#sis()
+#sins()
 n_compartimentos()
